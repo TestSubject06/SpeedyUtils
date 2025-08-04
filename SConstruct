@@ -5,8 +5,8 @@ import sys
 from methods import print_error
 
 
-libname = "EXTENSION-NAME"
-projectdir = "demo"
+libname = "SpeedyUtils"
+projectdir = "addons"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
 
@@ -58,7 +58,7 @@ library = env.SharedLibrary(
     source=sources,
 )
 
-copy = env.Install("{}/bin/{}/".format(projectdir, env["platform"]), library)
+copy = env.Install("{}/{}/bin/{}/".format(projectdir, libname, env["platform"]), library)
 
 default_args = [library, copy]
 Default(*default_args)

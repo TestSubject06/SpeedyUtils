@@ -3,21 +3,23 @@
 .godot/
 
 # Ignore library files but not the gdextension file
-demo/bin/*
-!demo/bin/android
-demo/bin/android/*
-!demo/bin/android/.gitkeep
-!demo/bin/linux
-demo/bin/linux/*
-!demo/bin/linux/.gitkeep
-!demo/bin/macos
-demo/bin/macos/*
-!demo/bin/macos/.gitkeep
-!demo/bin/windows
-demo/bin/windows/*
-!demo/bin/windows/.gitkeep
-!demo/bin/*.gdextension
+addons/bin/*
+!addons/bin/android
+addons/bin/android/*
+!addons/bin/android/.gitkeep
+!addons/bin/linux
+addons/bin/linux/*
+!addons/bin/linux/.gitkeep
+!addons/bin/macos
+addons/bin/macos/*
+!addons/bin/macos/.gitkeep
+!addons/bin/windows
+addons/bin/windows/*
+!addons/bin/windows/.gitkeep
+!addons/bin/*.gdextension
 .sconsign*.dblite
+
+/bin
 
 # Ignore custom.py
 custom.py
